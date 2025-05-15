@@ -3,8 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucifer Bot Dashboard</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <title>Lucifer Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        h1 {
+            margin-top: 20px;
+        }
+        .stats {
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 50%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .stats p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
     <h1>Lucifer Bot Dashboard</h1>
@@ -15,9 +38,5 @@
         <p><strong>Total Storage:</strong> <%= botData.storage %></p>
         <p><strong>Total Packs:</strong> <%= botData.packs %></p>
     </div>
-
-    <form action="/execute" method="POST">
-        <button type="submit">Execute Select All Bots</button>
-    </form>
 </body>
 </html>
