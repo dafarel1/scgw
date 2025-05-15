@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucifer Bot Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Lucifer Bot Dashboard</h1>
+    <div class="stats">
+        <p><strong>Total Gems:</strong> <%= botData.gems %></p>
+        <p><strong>Total Worlds:</strong> <%= botData.worlds %></p>
+        <p><strong>Total Seeds:</strong> <%= botData.seeds %></p>
+        <p><strong>Total Storage:</strong> <%= botData.storage %></p>
+        <p><strong>Total Packs:</strong> <%= botData.packs %></p>
+    </div>
+
+    <form action="/execute" method="POST">
+        <button type="submit">Execute Select All Bots</button>
+    </form>
+</body>
+</html>
